@@ -1,17 +1,30 @@
-<nav class="navbar">
-    <div class="container">
-        <div class="row">
-            <div>
-                <a class="navbar-brand" routerLink="/">
-                    <img src="/tailmates.png" alt="Tailmates" class="navbar-logo">
-                </a>
-            </div>
-            <div class="navbar-links">
-                <a routerLink="/">Home</a>
-                <a routerLink="/about">About</a>
-                <a routerLink="/login">Login</a>
-                <a routerLink="/register">Register</a>
-            </div>
+<mat-toolbar class="navbar">
+    <div class="navbar-container">
+        <a routerLink="/" class="navbar-brand">
+            <img src="/tailmates.png" alt="Tailmates" class="navbar-logo" >
+        </a>
+
+        <div class="navbar-links">
+            <a mat-button routerLink="/">Home</a>
+            <a mat-button routerLink="/about">About</a>
+            <a mat-button routerLink="/login">Login</a>
+            <a mat-button routerLink="/register">Register</a>
         </div>
+
+        <button
+            mat-icon-button
+            [matMenuTriggerFor]="menu"
+            class="menu-button"
+            aria-label="Open navigation menu"
+        >
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <mat-menu #menu="matMenu">
+            <a mat-menu-item routerLink="/">Home</a>
+            <a mat-menu-item routerLink="/about">About</a>
+            <a mat-menu-item routerLink="/login">Login</a>
+            <a mat-menu-item routerLink="/register">Register</a>
+        </mat-menu>
     </div>
-</nav>
+</mat-toolbar>
