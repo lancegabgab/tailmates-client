@@ -1,68 +1,74 @@
 <div class="register-page">
 
-    <div class="register-card">
+  <div class="register-card">
 
-        <h1>Create an Account</h1>
-        <p class="subtitle">Join Tailmates and find your perfect pet match 🐾💕</p>
+    <h1>Create an Account</h1>
+    <p class="subtitle">
+      Join Tailmates and find your perfect pet match 🐾💕
+    </p>
 
-        <form>
+    <form>
 
-            <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    placeholder="Enter your first name">
-            </div>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>First Name</mat-label>
+        <input
+          matInput
+          type="text"
+          name="firstName"
+          placeholder="Enter your first name">
+      </mat-form-field>
 
-            <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    placeholder="Enter your last name">
-            </div>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Last Name</mat-label>
+        <input
+          matInput
+          type="text"
+          name="lastName"
+          placeholder="Enter your last name">
+      </mat-form-field>
 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email">
-            </div>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          type="email"
+          name="email"
+          placeholder="Enter your email">
+      </mat-form-field>
 
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Enter your password">
-            </div>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          type="password"
+          name="password"
+          placeholder="Enter your password">
+      </mat-form-field>
 
-            <div class="form-group">
-                <label for="confirmPassword">Confirm Password</label>
-                <input
-                    type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    placeholder="Confirm your password">
-            </div>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Confirm Password</mat-label>
+        <input
+          matInput
+          type="password"
+          name="confirmPassword"
+          placeholder="Confirm your password">
+      </mat-form-field>
 
-            <button type="submit" class="register-button">
-                Create Account
-            </button>
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        class="register-button">
+        Create Account
+      </button>
 
-        </form>
+    </form>
 
-        <p class="login-text">
-            Already have an account?
-            <a routerLink="/login">Login</a>
-        </p>
+    <p class="login-text">
+      Already have an account?
+      <a routerLink="/login">Login</a>
+    </p>
 
-    </div>
+  </div>
 
 </div>
